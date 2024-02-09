@@ -11,8 +11,4 @@ import arviz as az
 
 rng = random.PRNGKey(0)
 
-root_path = Path().resolve().parents[1]
-data_path = root_path / "data"
-halos_path = data_path / "halos.pkl"
-
 G = 4.30219372e10 / 1e6
