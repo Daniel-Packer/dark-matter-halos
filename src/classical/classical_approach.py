@@ -37,8 +37,7 @@ def load_data(data_path: Path) -> dict[str, jnp.ndarray]:
     # When I performed a linear regression (see `classical_approach_linear_model.ipynb`), I found that
     # logc was about 5 times as important as logm. (In fact, I did not even have strong evidence that
     # logm was important, since the Bayesian regression posterior distribution included zero).
-    alpha = 5
-    predictors = jnp.stack([logc * alpha, logm], axis=1)
+    predictors = jnp.stack([logc, logm], axis=1)
 
 
     train_labels, val_labels, test_labels = labels[train_indices], labels[val_indices], labels[test_indices]
