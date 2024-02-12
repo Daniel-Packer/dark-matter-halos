@@ -1,0 +1,3 @@
+[submodule "covhalo"]
+	path = covhalo
+	url = https://github.com/captain-pool/covhalo
